@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="background" prefHeight="400.0" prefWidth="600.0" stylesheets="@CSS/main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.reservationsystem.AmendReservation1">
+    <children>
+        <Label layoutX="222.0" layoutY="14.0" text="Amend Reservation">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="67.0" layoutY="105.0" text="Reservation Voucher Number * ">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="reservationVoucherNumberAmendReservation1" layoutX="272.0" layoutY="101.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Button fx:id="continueAmendReservation1" layoutX="262.0" layoutY="341.0" mnemonicParsing="false" onAction="#onContinueAmendReservation1ButtonClick" text="Continue">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="40.0" fitWidth="136.0" layoutX="458.0" layoutY="8.0">
+            <image>
+                <Image url="@Image/logo.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="background" prefHeight="400.0" prefWidth="600.0" stylesheets="@CSS/main.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.reservationsystem.CancelReservation1">
+    <children>
+        <Label layoutX="232.0" layoutY="24.0" text="Cancel Reservation">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="77.0" layoutY="115.0" text="Reservation Voucher Number *">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="reservationVoucherNumberCancelReservation1" layoutX="282.0" layoutY="111.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Button layoutX="272.0" layoutY="351.0" mnemonicParsing="false" onAction="#onContinueCancelReservation1ButtonClick" text="Continue">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="40.0" fitWidth="136.0" layoutX="507.0" layoutY="7.0">
+            <image>
+                <Image url="@Image/logo.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="background" prefHeight="400.0" prefWidth="600.0" stylesheets="@CSS/main.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.reservationsystem.CancelReservation2">
+    <children>
+        <Label layoutX="225.0" layoutY="14.0" text="Cancel Reservation">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="64.0" layoutY="70.0" text="Cancellation Voucher Number *">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="cancellationVoucherNumber" layoutX="269.0" layoutY="66.0" prefHeight="30.0" prefWidth="236.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Label layoutX="64.0" layoutY="114.0" text="Reason For Cancellation">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="64.0" layoutY="158.0" text="Reservation Voucher Number *">  <!-- Add this label -->
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="reservationVoucherNumber" layoutX="269.0" layoutY="154.0" prefHeight="30.0" prefWidth="236.0">  <!-- Add this TextField -->
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Button fx:id="cancelReservationCancelReservation2" layoutX="331.0" layoutY="356.0" mnemonicParsing="false" onAction="#onCancelReservationCancelReservation2ButtonClick" text="Cancel Reservation">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="40.0" fitWidth="136.0" layoutX="467.0" layoutY="7.0">
+            <image>
+                <Image url="@Image/logo.png" />
+            </image>
+        </ImageView>
+      <Button fx:id="generateVoucher" layoutX="147.0" layoutY="356.0" mnemonicParsing="false" onAction="#onGenerateVoucherAmendReservation2ButtonClick" text="Generate Voucher">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="reasonForCancellation" layoutX="269.0" layoutY="109.0" prefHeight="30.0" prefWidth="236.0" />
+    </children>
+</AnchorPane>
